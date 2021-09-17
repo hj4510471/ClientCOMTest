@@ -1,0 +1,7 @@
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\bin\Debug\ClientLib.dll
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\bin\Debug\ClientLib.pdb
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\obj\Debug\ClientLib.csprojAssemblyReference.cache
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\obj\Debug\ClientLib.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\obj\Debug\ClientLib.dll
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\obj\Debug\ClientLib.pdb
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\bin\Debug\ClientLib.tlb

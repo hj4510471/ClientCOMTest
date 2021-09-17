@@ -1,0 +1,54 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.28.29913.0 (8d717aca).
+//
+// D:\WorkSpace\Test\ClientDLL\ClientLib\ClientTest_cpp\Debug\clientlib.tli
+//
+// Wrapper implementations for Win32 type library ClientLib.tlb
+// compiler-generated file created 09/15/21 at 18:09:35 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IClientProtocolLib wrapper method implementations
+//
+
+inline VARIANT_BOOL IClientProtocolLib::Connect ( enum ProtocolKind kind, _bstr_t ipAddr, long portNum ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Connect(kind, ipAddr, portNum, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IClientProtocolLib::DisConnect ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DisConnect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IClientProtocolLib::IsConnected ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsConnected(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IClientProtocolLib::SendMsg ( _bstr_t data ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_SendMsg(data, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IClientProtocolLib::ReceiveMsg ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_ReceiveMsg(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IClientProtocolLib::GetErrorMsg ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetErrorMsg(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}

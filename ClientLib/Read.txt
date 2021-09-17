@@ -1,0 +1,8 @@
+C# 프로그램을 dll 로 만들고 c++ 에서 사용할 수 있도록 만들기
+  https://developer-joe.tistory.com/140?category=650732
+
+regasm ProjectName.dll /tlb:ProjectName.tlb
+regasm "D:\WorkSpace\Test\ClientDLL\ClientLib\ClientLib\bin\Debug\ClientLib.dll" /tlb:ClientLib.tlb
+
+
+https://stackoverflow.com/questions/13456628/use-com-in-c-builder

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ie6dI1AfQqYt68upM3Ler2IVNsJuZOWEfZgIye/e7IdwxECYBaTARurHPq72uXHZA4NPJl/7xGhwmKKXBl2djw==",
+  "success": true,
+  "projectFilePath": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\ClientTest\\ClientTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yune_\\.nuget\\packages\\dryioc.dll\\4.5.0\\dryioc.dll.4.5.0.nupkg.sha512",
+    "C:\\Users\\yune_\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\yune_\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\yune_\\.nuget\\packages\\prism.dryioc\\8.0.0.1909\\prism.dryioc.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\yune_\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512"
+  ],
+  "logs": []
+}

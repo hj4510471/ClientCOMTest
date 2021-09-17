@@ -1,0 +1,115 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.28.29913.0 (8d717aca).
+//
+// D:\WorkSpace\Test\ClientDLL\ClientLib\ClientTest_cpp\Debug\clientlib.tlh
+//
+// C++ source equivalent of Win32 type library ClientLib.tlb
+// compiler-generated file created 09/15/21 at 18:09:35 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("0b6252a6-5770-4259-8519-43ae6b162eee"))
+/* LIBID */ __ClientLib;
+enum ProtocolKind;
+struct __declspec(uuid("32565504-2d50-4b35-ad1c-69882186ec34"))
+/* dual interface */ IClientProtocolLib;
+struct /* coclass */ ClientProtocolLib;
+struct __declspec(uuid("e04b71e9-fe1c-3b57-8326-ff10b2803bd3"))
+/* dual interface */ _ClientProtocolLib;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IClientProtocolLib, __uuidof(IClientProtocolLib));
+_COM_SMARTPTR_TYPEDEF(_ClientProtocolLib, __uuidof(_ClientProtocolLib));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("2309b73f-8205-40b8-b1e0-2ff8e47985ad"))
+ProtocolKind
+{
+    ProtocolKind_NULL = 0,
+    ProtocolKind_Socket = 1,
+    ProtocolKind_UDP = 2,
+    ProtocolKind_TCP = 3
+};
+
+struct __declspec(uuid("32565504-2d50-4b35-ad1c-69882186ec34"))
+IClientProtocolLib : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL Connect (
+        enum ProtocolKind kind,
+        _bstr_t ipAddr,
+        long portNum );
+    VARIANT_BOOL DisConnect ( );
+    VARIANT_BOOL IsConnected ( );
+    VARIANT_BOOL SendMsg (
+        _bstr_t data );
+    _bstr_t ReceiveMsg ( );
+    _bstr_t GetErrorMsg ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Connect (
+        /*[in]*/ enum ProtocolKind kind,
+        /*[in]*/ BSTR ipAddr,
+        /*[in]*/ long portNum,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_DisConnect (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_IsConnected (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_SendMsg (
+        /*[in]*/ BSTR data,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_ReceiveMsg (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetErrorMsg (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("28ff5549-40a2-468d-a34d-5927d8d5a8a6"))
+ClientProtocolLib;
+    // [ default ] interface _ClientProtocolLib
+    // interface _Object
+    // interface IClientProtocolLib
+
+struct __declspec(uuid("e04b71e9-fe1c-3b57-8326-ff10b2803bd3"))
+_ClientProtocolLib : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_ClientLib =
+    {0x0b6252a6,0x5770,0x4259,{0x85,0x19,0x43,0xae,0x6b,0x16,0x2e,0xee}};
+extern "C" const GUID __declspec(selectany) IID_IClientProtocolLib =
+    {0x32565504,0x2d50,0x4b35,{0xad,0x1c,0x69,0x88,0x21,0x86,0xec,0x34}};
+extern "C" const GUID __declspec(selectany) CLSID_ClientProtocolLib =
+    {0x28ff5549,0x40a2,0x468d,{0xa3,0x4d,0x59,0x27,0xd8,0xd5,0xa8,0xa6}};
+extern "C" const GUID __declspec(selectany) IID__ClientProtocolLib =
+    {0xe04b71e9,0xfe1c,0x3b57,{0x83,0x26,0xff,0x10,0xb2,0x80,0x3b,0xd3}};
+
+//
+// Wrapper method implementations
+//
+
+#include "D:\WorkSpace\Test\ClientDLL\ClientLib\ClientTest_cpp\Debug\clientlib.tli"
+
+#pragma pack(pop)

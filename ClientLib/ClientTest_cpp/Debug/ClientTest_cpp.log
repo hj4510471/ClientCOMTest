@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\WorkSpace\Test\ClientDLL\ClientLib\ClientTest_cpp\Main.cpp(33): warning C4715: 'ClientClassWrapper::IsConnected': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  ClientTest_cpp.vcxproj -> D:\WorkSpace\Test\ClientDLL\ClientLib\Debug\ClientTest_cpp.exe

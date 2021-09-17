@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.142,C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.h=D:\WorkSpace\Test\ClientDLL\Test_dll_RAD\Unit1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.142,C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.dfm=D:\WorkSpace\Test\ClientDLL\Test_dll_RAD\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.635,=C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.019,C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Project1PCH1.h=D:\WorkSpace\Test\ClientDLL\Test_dll_RAD\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.676,=C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.142,C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.cpp=D:\WorkSpace\Test\ClientDLL\Test_dll_RAD\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.875,C:\Users\yune_\OneDrive\문서\Embarcadero\Studio\Projects\Project1.cbproj=D:\WorkSpace\Test\ClientDLL\Test_dll_RAD\Project1.cbproj</Transaction>
+    <Transaction>2021-09-16 10:19:41.349,=D:\WorkSpace\Test\ClientDLL\Test_dll_RAD\ClientLib_TLB.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

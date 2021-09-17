@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Connect: TButton
+    Left = 532
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = 'Connect'
+    TabOrder = 0
+  end
+  object ComboBoxProtocol: TComboBox
+    Left = 8
+    Top = 18
+    Width = 171
+    Height = 21
+    Style = csDropDownList
+    DropDownCount = 20
+    TabOrder = 1
+    Items.Strings = (
+      'TCP/IP'
+      'UDP')
+  end
+  object Disconnect: TButton
+    Left = 444
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = 'Disconnect'
+    TabOrder = 2
+  end
+  object InputIPAddr: TLabeledEdit
+    Left = 203
+    Top = 18
+    Width = 65
+    Height = 21
+    EditLabel.Width = 14
+    EditLabel.Height = 13
+    EditLabel.Caption = 'IP:'
+    LabelPosition = lpLeft
+    TabOrder = 3
+  end
+  object InputPortNum: TLabeledEdit
+    Left = 331
+    Top = 18
+    Width = 65
+    Height = 21
+    EditLabel.Width = 24
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Port:'
+    LabelPosition = lpLeft
+    TabOrder = 4
+    OnKeyUp = InputPortNumKeyUp
+  end
+  object ScrollBox1: TScrollBox
+    Left = 8
+    Top = 64
+    Width = 599
+    Height = 209
+    TabOrder = 5
+  end
+end

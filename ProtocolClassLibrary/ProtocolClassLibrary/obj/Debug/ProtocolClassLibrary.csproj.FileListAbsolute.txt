@@ -1,0 +1,13 @@
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\bin\Debug\ProtocolClassLibrary.dll
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\bin\Debug\ProtocolClassLibrary.pdb
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\bin\Debug\ProtocolClassLibrary.tlb
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.csproj.AssemblyReference.cache
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.csproj.CoreCompileInputs.cache
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.dll
+D:\Dev_github\jbkim\ProtocolLib\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.pdb
+D:\WorkSpace\Test\ClientDLL\ProtocolClassLibrary\ProtocolClassLibrary\bin\Debug\ProtocolClassLibrary.dll
+D:\WorkSpace\Test\ClientDLL\ProtocolClassLibrary\ProtocolClassLibrary\bin\Debug\ProtocolClassLibrary.pdb
+D:\WorkSpace\Test\ClientDLL\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.csprojAssemblyReference.cache
+D:\WorkSpace\Test\ClientDLL\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Test\ClientDLL\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.dll
+D:\WorkSpace\Test\ClientDLL\ProtocolClassLibrary\ProtocolClassLibrary\obj\Debug\ProtocolClassLibrary.pdb

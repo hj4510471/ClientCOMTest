@@ -1,0 +1,32 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\Record\{A01011D5-E9E1-34B9-BA44-ECF9C51B1AB1}\1.0.0.0]
+"Class"="ProtocolClassLibrary.ProtocolKind"
+"Assembly"="ProtocolClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+
+[HKEY_CLASSES_ROOT\ProtocolClassLibrary.ProtocolLib]
+@="ProtocolClassLibrary.ProtocolLib"
+
+[HKEY_CLASSES_ROOT\ProtocolClassLibrary.ProtocolLib\CLSID]
+@="{97BA9977-437A-37F7-985E-D3D7E3211AB8}"
+
+[HKEY_CLASSES_ROOT\CLSID\{97BA9977-437A-37F7-985E-D3D7E3211AB8}]
+@="ProtocolClassLibrary.ProtocolLib"
+
+[HKEY_CLASSES_ROOT\CLSID\{97BA9977-437A-37F7-985E-D3D7E3211AB8}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="ProtocolClassLibrary.ProtocolLib"
+"Assembly"="ProtocolClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+
+[HKEY_CLASSES_ROOT\CLSID\{97BA9977-437A-37F7-985E-D3D7E3211AB8}\InprocServer32\1.0.0.0]
+"Class"="ProtocolClassLibrary.ProtocolLib"
+"Assembly"="ProtocolClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+
+[HKEY_CLASSES_ROOT\CLSID\{97BA9977-437A-37F7-985E-D3D7E3211AB8}\ProgId]
+@="ProtocolClassLibrary.ProtocolLib"
+
+[HKEY_CLASSES_ROOT\CLSID\{97BA9977-437A-37F7-985E-D3D7E3211AB8}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]

@@ -1,0 +1,12 @@
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\bin\Debug\net5.0\ClientLibrary.deps.json
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\bin\Debug\net5.0\ClientLibrary.dll
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\bin\Debug\net5.0\ref\ClientLibrary.dll
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\bin\Debug\net5.0\ClientLibrary.pdb
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.csprojAssemblyReference.cache
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.AssemblyInfoInputs.cache
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.AssemblyInfo.cs
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.dll
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ref\ClientLibrary.dll
+D:\WorkSpace\Test\ClientDLL\ClientLibrary\ClientLibrary\obj\Debug\net5.0\ClientLibrary.pdb
