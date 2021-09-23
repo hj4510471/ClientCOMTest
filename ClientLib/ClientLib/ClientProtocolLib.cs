@@ -27,6 +27,8 @@ namespace ClientLib
         bool SendMsg(string data);
         string ReceiveMsg();
         string GetErrorMsg();
+        bool SendArgs(string sendArgs);
+        string ReceiveArgs();
     }
 
     [Guid("28FF5549-40A2-468D-A34D-5927D8D5A8A6")]
@@ -174,7 +176,7 @@ namespace ClientLib
             }
 
 
-            recvMsg = Encoding.UTF8.GetString(buf);//buf.ToString();
+            recvMsg = Encoding.UTF8.GetString(buf).TrimEnd('\0');//buf.ToString();
             return recvMsg;
         }
 
@@ -219,6 +221,66 @@ namespace ClientLib
             return tmp;
         }
 
-     
+        public bool SendArgs(string sendArgs)
+        {
+            if (IsConnected() == false)
+            {
+                _errorMsg = $"Not Connected. {_kind.ToString()}  Addr : {_ipAdddress}   Port : {_portNum}";
+                return false;
+            }
+            bool res = false;
+            switch (_kind)
+            {
+                case ProtocolKind.TCP:
+                    try
+                    {
+                        byte[] buf = Encoding.Default.GetBytes(sendArgs);
+                        _tcpClient.GetStream().Write(buf, 0, buf.Length);
+                        res = true;
+                    }
+                    catch(Exception e)
+                    {
+                        _errorMsg = $"Error to Send Argument.\n{e.ToString()}";
+                        res = false;
+                    }
+                    break;
+                default:
+                    _errorMsg = $"Only use TCP Protocol. Current : {_kind.ToString()}";
+                    res = false;
+                    break;
+            }
+            return res;
+        }
+
+        public string ReceiveArgs()
+        {
+            if (IsConnected() == false)
+            {
+                _errorMsg = $"Not Connected. {_kind.ToString()}  Addr : {_ipAdddress}   Port : {_portNum}";
+                return null;
+            }
+       
+            string recvArgs = string.Empty;
+
+            switch (_kind)
+            {
+                case ProtocolKind.TCP:
+                    try
+                    {
+                        byte[] buf = new byte[1024];
+                        _tcpClient.GetStream().Read(buf, 0, buf.Length);
+                        recvArgs = Encoding.UTF8.GetString(buf).TrimEnd('\0');
+                    }catch(Exception e)
+                    {
+                        _errorMsg = $"Error to Send Argument.\n{e.ToString()}";
+                    }
+                    break;
+                default:
+                    _errorMsg = $"Only use TCP Protocol. Current : {_kind.ToString()}";
+                    break;
+            }
+
+            return recvArgs;
+        }
     }
 }

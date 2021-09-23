@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj": {}
+    "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj": {}
   },
   "projects": {
-    "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj": {
+    "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj",
+        "projectUniqueName": "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj",
         "projectName": "MultiClientText_cs",
-        "projectPath": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj",
+        "projectPath": "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\MultiClientText_cs\\MultiClientText_cs.csproj",
         "packagesPath": "C:\\Users\\yune_\\.nuget\\packages\\",
-        "outputPath": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\MultiClientText_cs\\obj\\",
+        "outputPath": "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\MultiClientText_cs\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

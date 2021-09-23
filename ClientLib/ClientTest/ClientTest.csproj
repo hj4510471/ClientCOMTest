@@ -36,7 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClientLib">
+    <Reference Include="ClientLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ClientLib\bin\Debug\ClientLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />

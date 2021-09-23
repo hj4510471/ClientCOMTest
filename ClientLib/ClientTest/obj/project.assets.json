@@ -408,11 +408,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\ClientTest\\ClientTest.csproj",
+      "projectUniqueName": "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\ClientTest\\ClientTest.csproj",
       "projectName": "ClientTest",
-      "projectPath": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\ClientTest\\ClientTest.csproj",
+      "projectPath": "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\ClientTest\\ClientTest.csproj",
       "packagesPath": "C:\\Users\\yune_\\.nuget\\packages\\",
-      "outputPath": "D:\\WorkSpace\\Test\\ClientDLL\\ClientLib\\ClientTest\\obj\\",
+      "outputPath": "D:\\WorkSpace\\Test\\ClientCOMTest\\ClientLib\\ClientTest\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
