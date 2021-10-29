@@ -1,0 +1,58 @@
+﻿<Window x:Class="ClientArgsTest.Views.SetCommandWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientArgsTest.Views"
+        mc:Ignorable="d"
+        Title="SetCommandWindow" Height="250" Width="400">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Load" >
+                <StackPanel Orientation="Vertical">
+                    <GroupBox Header="Template" Height="100">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Path"/>
+                            <TextBox Text="{Binding TemplatePath}" Height="30" Width="300"/>
+                            <Button Content="..." Height="30" Width="20" Command="{Binding ShowTemplateWindow}"/>
+                        </StackPanel>
+
+                    </GroupBox>
+                    <Grid HorizontalAlignment="Center">
+                        <Button Content="Set" Margin="10" Padding="5" Command="{Binding SetTemplatePath}"/>
+                        
+                    </Grid>
+                </StackPanel>
+                
+          
+            </TabItem>
+            <TabItem Header="Find">
+                <StackPanel Orientation="Vertical">
+                    <GroupBox Header="Page">
+                        <StackPanel Orientation="Horizontal" Margin="3">
+                            <TextBlock Text="Num : "/>
+                            <TextBox Text="{Binding FindPageNum}" Width="50"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <Grid HorizontalAlignment="Center">
+                        <Button Content="Set" Margin="10" Padding="5" Command="{Binding SetPageNum}"/>
+
+                    </Grid>
+                </StackPanel>
+             
+            </TabItem>
+            <TabItem Header="Replace">
+                
+            </TabItem>
+            <TabItem Header="Play/Stop">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                        <Button Content="PLAY" Margin="5" Command="{Binding SetPlayCmd}"/>
+                        <Button Content="STOP" Margin="5" Command="{Binding SetStopCmd}"/>
+                    </StackPanel>
+                </Grid>
+         
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

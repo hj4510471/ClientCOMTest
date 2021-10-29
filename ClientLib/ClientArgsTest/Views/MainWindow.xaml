@@ -6,18 +6,19 @@
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="1">
             <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto">
-                <TextBlock Margin="3" Text="{Binding Log}" TextWrapping="Wrap"/>
+                <TextBox Margin="3" Text="{Binding Log}" TextWrapping="Wrap"/>
             </ScrollViewer>
            
         </Grid>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
             <ComboBox SelectedItem="{Binding Protocol}" ItemsSource="{Binding ProtocolList}">
 
                 <ComboBox.ItemTemplate>
@@ -39,18 +40,47 @@
 
         <Grid Grid.Row="2">
             <StackPanel Orientation="Horizontal" Margin="3">
-                <TextBox Text="{Binding SendArgs}" Width="450"/>
+                <TextBox Text="{Binding SendArgs}" MinWidth="450"/>
                 <Button Content="Send Args" Command="{Binding SendArgsCommand}"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="3" Margin="3">
-            <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" >
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Receive : "/>
-                    <TextBox Text="{Binding ReceiveArgs}" TextWrapping="Wrap"/>
+                    <Button Content="Status" Command="{Binding CheckStatusCmd}"/>
+                    <TextBox Text="{Binding LoadTemplatePath}" Width="150"/>
+                    <Button Content="Load" Command="{Binding LoadTemplateCmd}"/>
+                    <TextBox Text="{Binding LoadArgs}" Width="250"/>
                 </StackPanel>
-            </ScrollViewer>
-        
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="{Binding FindPageNum}" Width="50"/>
+                    <Button Content="Find" Command="{Binding FindPageNumCmd}"/>
+                    <TextBox Text="{Binding FindArgs}" Width="300"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="{Binding ReplaceArgs}" Width="450"/>
+                    <Button Content="Replace" Command="{Binding ReplaceCmd}"/>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Play" Command="{Binding PlayCmd}"/>
+                    <Button Content="Stop" Command="{Binding StopCmd}"/>
+                    <CheckBox Content="check status" IsChecked="{Binding IsCheckStatusSuccess}"/>
+                    <TextBox Text="{Binding PlayStopArgs}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="CUE" Command="{Binding BtnCueClicked}"/>
+                    <Button Content="PLAY" Command="{Binding BtnInClicked}"/>
+                    <Button Content="STOP" Command="{Binding BtnOutClicked}"/>
+                </StackPanel>
+            </StackPanel>
+          
+
+        </Grid>
+        <Grid Grid.Row="4" Margin="3">
+            <!--<Button Content="Make Args" Command="{Binding MakeCommand}"/>-->
+            <TextBox Text="{Binding ReceiveArgs}"/>
         </Grid>
     </Grid>
 </Window>

@@ -41,7 +41,7 @@ namespace ClientLib
 
         private TcpClient _tcpClient;
         private UdpClient _udpClient;
-        //private Socket _socketClient;   //https://jinjae.tistory.com/50
+        private Socket _socketClient;   //https://jinjae.tistory.com/50
 
         private string _errorMsg;
      
@@ -80,6 +80,11 @@ namespace ClientLib
                         //IPEndPoint pEndPoint = new IPEndPoint(iPAddress, _portNum);
                         _udpClient.Connect(IPAddress.Parse(ipAddr), portNum);
                         break;
+                    case ProtocolKind.Socket:
+                        IPEndPoint ipe = new IPEndPoint(IPAddress.Parse(_ipAdddress), _portNum);
+                        _socketClient = new Socket(ipe.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                        _socketClient.Connect(ipe);
+                        break;
                 }
             }
             catch(Exception e)
@@ -114,6 +119,11 @@ namespace ClientLib
                 _udpClient.Close();
                 _udpClient = null;
             }
+            if (_socketClient != null)
+            {
+                _socketClient.Close();
+                _socketClient = null;
+            }
 
 
             return true;
@@ -130,13 +140,19 @@ namespace ClientLib
             switch (_kind)
             {
                 case ProtocolKind.TCP:
-                    return (bool)(_tcpClient.Connected);
+                    return _tcpClient.Connected;
                 case ProtocolKind.UDP:
                     if (_udpClient == null)
                     {
                         return false;
                     }
                     break;
+                case ProtocolKind.Socket:
+                    if (_socketClient == null)
+                    {
+                        return false;
+                    }
+                    return _socketClient.Connected;
 
             }
             return true;
@@ -165,7 +181,7 @@ namespace ClientLib
                         buf = _udpClient.Receive(ref pEndPoint);
                         break;
                     case ProtocolKind.Socket:
-                        //_socketClient.Receive(buf);
+                        _socketClient.Receive(buf);
                         break;
                 }
             }
@@ -201,6 +217,9 @@ namespace ClientLib
                         //IPEndPoint pEndPoint = new IPEndPoint(iPAddress, _portNum);
                         _udpClient.Send(buf, buf.Length);                      
                         break;
+                    case ProtocolKind.Socket:
+                        _socketClient.Send(buf, buf.Length, SocketFlags.None);
+                        break;
                 }
 
                 return true;
@@ -234,7 +253,7 @@ namespace ClientLib
                 case ProtocolKind.TCP:
                     try
                     {
-                        byte[] buf = Encoding.Default.GetBytes(sendArgs);
+                        byte[] buf = Encoding.UTF8.GetBytes(sendArgs);
                         _tcpClient.GetStream().Write(buf, 0, buf.Length);
                         res = true;
                     }

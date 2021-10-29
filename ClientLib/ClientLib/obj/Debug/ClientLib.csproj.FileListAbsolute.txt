@@ -11,4 +11,3 @@ D:\WorkSpace\Test\ClientCOMTest\ClientLib\ClientLib\obj\Debug\ClientLib.csprojAs
 D:\WorkSpace\Test\ClientCOMTest\ClientLib\ClientLib\obj\Debug\ClientLib.csproj.CoreCompileInputs.cache
 D:\WorkSpace\Test\ClientCOMTest\ClientLib\ClientLib\obj\Debug\ClientLib.dll
 D:\WorkSpace\Test\ClientCOMTest\ClientLib\ClientLib\obj\Debug\ClientLib.pdb
-D:\WorkSpace\Test\ClientCOMTest\ClientLib\ClientLib\bin\Debug\ClientLib.tlb
